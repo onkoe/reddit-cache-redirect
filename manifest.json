@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "reddit-cache-redirect",
+    "version": "0.1.0",
+    "description": "Redirect all Reddit links to Google's cached version.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://www.reddit.com/*"
+    ],
+    "icons": {
+        "64": "assets/icon/64.png",
+        "128": "assets/icon/128.png",
+        "256": "assets/icon/256.png"
+    },
+    "background": {
+        "scripts": [
+            "./src/redirect.ts"
+        ],
+        "persistent": false
+    }
+}
